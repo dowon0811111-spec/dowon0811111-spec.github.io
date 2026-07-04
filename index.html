@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김도원이 좋아하는 게임</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Malgun Gothic', sans-serif;
+            background-color: #87CEEB;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #1a2f5e;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
+        }
+
+        .card {
+            background-color: #1a3a6e;
+            border-radius: 16px;
+            padding: 30px;
+            width: 100%;
+            max-width: 700px;
+            margin-bottom: 24px;
+            color: #ffffff;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+        }
+
+        .profile-section {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-color: #3a5fa0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            flex-shrink: 0;
+            border: 3px solid #87CEEB;
+        }
+
+        .profile-text h2 {
+            font-size: 1.4rem;
+            margin-bottom: 8px;
+            color: #aed6f1;
+        }
+
+        .profile-text p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #d6eaf8;
+        }
+
+        .games-section h2 {
+            font-size: 1.3rem;
+            color: #aed6f1;
+            margin-bottom: 16px;
+        }
+
+        .game-list {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .game-list li {
+            background-color: #24508c;
+            border-radius: 10px;
+            padding: 20px;
+            font-size: 1rem;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+            flex: 1;
+            min-width: 180px;
+            max-width: 220px;
+            justify-content: flex-start;
+        }
+
+        .game-number {
+            background-color: #87CEEB;
+            color: #1a2f5e;
+            font-weight: bold;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .game-image {
+            width: 100%;
+            height: auto;
+            max-height: 200px;
+            border-radius: 8px;
+            object-fit: contain;
+            background-color: rgba(255,255,255,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>김도원이 좋아하는 게임</h1>
+
+    <div class="card profile-section">
+        <div class="profile-image">🎮</div>
+        <div class="profile-text">
+            <h2>안녕하세요!</h2>
+            <p>저는 김도원이고 게임을 좋아합니다.<br>다양한 장르의 게임을 즐기며<br>새로운 세계를 탐험하는 것을 좋아합니다.</p>
+        </div>
+    </div>
+
+    <div class="card games-section">
+        <h2>좋아하는 게임 목록</h2>
+        <ul class="game-list">
+            <li>
+                <span class="game-number">1</span>
+                테라리아
+                <img class="game-image" src="테라리아.webp" alt="테라리아">
+            </li>
+            <li>
+                <span class="game-number">2</span>
+                문명
+                <img class="game-image" src="문명.jpg" alt="문명">
+            </li>
+            <li>
+                <span class="game-number">3</span>
+                몬스터 헌터
+                <img class="game-image" src="몬헌.webp" alt="몬스터 헌터">
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>
